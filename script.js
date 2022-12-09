@@ -9,7 +9,7 @@ const textLoad = () => {
     }, 4000);
     setTimeout(() => {
         text.textContent = 'UI/UX Designer';
-    }, 6000);
+    }, 8000);
    
 }
 

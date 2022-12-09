@@ -96,16 +96,14 @@ body {
 
 @keyframes animate{
     40%, 60%{
-        left: 100%;
-    }
-
-    40%, 60%{
-      left: 100%;
+        left: calc(100% + 5px);
     }
 
     100%{
       left: 0%;
-  }
+    }
+
+   
 }
 
 

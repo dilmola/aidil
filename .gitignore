@@ -2241,7 +2241,6 @@ node_modules/node-sass/src/libsass/Makefile
 node_modules/node-sass/src/libsass/Makefile.conf
 node_modules/node-sass/src/libsass/Readme.md
 node_modules/node-sass/src/libsass/res/resource.rc
-node_modules/node-sass/src/libsass/script/bootstrap
 node_modules/node-sass/src/libsass/script/branding
 node_modules/node-sass/src/libsass/script/ci-build-libsass
 node_modules/node-sass/src/libsass/script/ci-build-plugin
