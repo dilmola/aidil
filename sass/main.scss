@@ -1,0 +1,290 @@
+$white-background: #f7ede2;
+$blue-font :#3e5c76;
+$dark-font : #1d2d44;
+$blue-type : #3e5c76;
+$gutter-horizontal: 6rem;
+$grid-width: 115rem;
+
+*,
+*::after,
+*::before  {                     
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+    font-family: 'Heebo', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: $white-background;
+    position: relative;
+    overflow: hidden;
+    
+    box-sizing: inherit;
+
+}
+
+
+.itemleft {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    position: relative;
+    top: 5rem;
+    left: 5rem;
+    &__text{
+        position: relative;
+        color: $blue-font;
+        font-size: 6rem;
+        font-weight: 100;
+    }
+
+    &__first-text{
+       
+        color: $dark-font;
+       
+    }
+}
+
+
+
+
+.itembutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    top: 5rem;
+    left: 5rem;
+}
+
+.itemright {
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    &_photo{
+                  position: absolute; 
+
+        &--p1{       
+           width: 60%;
+
+
+          left: 20%;
+
+
+
+
+          z-index: 500;
+
+           }
+}
+}
+
+.itemleft__text.itemleft__sec-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $white-background;
+    border-left: 1px solid $blue-type;
+
+    animation: animate 4s steps(40) infinite;
+}
+
+@keyframes animate{
+    40%, 60%{
+        left: 100%;
+    }
+
+    100%{
+        left: 0%;
+    }
+}
+
+
+
+
+
+
+.column {
+    justify-content: center;
+
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; 
+  }
+
+
+  .row {
+    padding: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+     align-items: center;
+    &:after{
+        content: "";
+    display: table;
+    clear: both;
+    }
+  }
+ 
+
+  
+.header{
+    height: 100vh;
+    background-color: $blue-type;
+    background-size: cover;
+    background-position: top;
+    padding: 25rem 0;
+    position: relative;
+
+      &_right{
+          position: relative;
+
+          
+
+        &_photo{
+          &--p1{       
+             width: 80%;
+
+            position: absolute; 
+
+            left: 6rem;
+            top: -6rem;
+
+            border: $blue-type;
+
+
+
+            z-index: 500;
+
+            transition: all .2s;
+
+           
+
+             
+
+          &:hover {
+              transform: translateY(-2rem);
+              }
+
+        }
+        }
+        
+          
+      }
+
+      &_right-stroke{
+
+        float: left;
+
+
+        border: 3px solid $blue-type;
+        
+        width: 80%;
+        height: 43rem;
+        transition: all .2s;
+        z-index: -1;
+
+      
+
+        &:hover {
+          transform: translateX(-2rem);
+          }
+
+        
+        
+      }
+
+      
+      
+  }
+
+
+
+.nav{
+  position: relative;
+  top: 0;
+  left:0;
+  width: 100%;
+  padding: 38px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+ 
+
+      
+
+
+    &__navigation{
+      position: relative;
+     display: flex;
+
+    
+     }
+
+     &__list{
+      list-style: none; 
+
+
+ 
+     }
+
+&__link{
+  display: flex;
+  color: #333;
+  font-weight: 400;      
+  margin-left: 40px;
+
+  text-decoration: none;
+  position: relative;
+  transition: 0.5s;
+    
+
+    &:hover{
+      background-position: right center; /* change the direction of the change here */
+      background-color: #e6ded6;
+
+    }
+
+
+      }
+}
+
+.btn {
+    margin-top: 3rem;
+    padding: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    text-decoration: none;
+   }
+  
+
+  .btn:hover {
+    background-position: right center; /* change the direction of the change here */
+  }
+  
+  .btn-1 {
+    background-image: linear-gradient(to right, #19273c 0%, #19273c 50%, #3e5c76 50%, #3e5c76 100%);
+  }
+
+      
+
+
+    
+    
