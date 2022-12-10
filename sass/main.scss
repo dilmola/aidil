@@ -1,0 +1,404 @@
+$white-color: #f1faee;
+$white-color-card: #f1faee;
+$grey-color: #6b6b6b;
+$dark-color : #1d2d44;
+$dark-color-opacity : #1d2d444e;
+$blue-color : #19273c;
+$gutter-horizontal: 6rem;
+$grid-width: 115rem;
+$highlight-dark-blue-color: #023047;
+
+*,
+*::after,
+*::before  {                     
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color: $dark-color;
+   
+    font-family: 'Heebo', sans-serif;
+}
+
+body {
+  color: $dark-color;
+  background: $white-color;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.header{
+  height: 100vh;
+  background-color: $white-color;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  overflow: hidden;    
+
+}
+
+.section-project{
+  padding: 1px 0 0 0;
+  margin-top: 0;
+
+}
+
+.h1{
+  font-weight: 900;
+  color: $dark-color;
+  font-size: 1.4em;
+}
+
+.h2{
+  font-weight: bold;
+  color: $dark-color;
+  font-size: 4em;
+}
+
+.h3 {
+  font-size: 1.8em;
+  font-weight: 900;
+}
+
+.main{
+  height: 100vh;
+}
+
+.itemleft {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    position: relative;
+    top: 3rem;
+    left: 5rem;
+    &__text{
+        position: relative;
+        color: $blue-color;
+        font-size: 4.2rem;
+        font-weight: bold;
+        
+    }
+
+    &__first-text{
+       
+        color: $dark-color;
+        font-weight: 300!important;
+    }
+}
+
+.itemleft-stage {
+  justify-content: space-between !important;
+  margin-bottom: 2rem;
+}
+
+
+.itembutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    top: 5rem;
+    left: 5rem;
+}
+
+.itemright {
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  &_photo{
+          position: relative; 
+
+    &--p1{       
+      width: 60%;
+      left: 30%;
+      
+
+    }
+}
+}
+.itemleft__sec-text{
+  
+}
+.itemleft__text.itemleft__sec-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $white-color;
+    border-left: 1px solid $blue-color;
+
+    animation: animate 4s steps(40) infinite;
+}
+
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 5px);
+    }
+
+    100%{
+      left: 0%;
+    }
+
+   
+}
+
+
+
+
+.column {
+    justify-content: center;
+
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; 
+  }
+
+
+.row {
+  position: relative;
+  top: 0;
+  left:0;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  margin-bottom: 1rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+    &:after{
+    content: "";
+    display: table;
+    clear: both;
+  
+  }
+}
+
+.margin-bot{
+  margin-bottom: 3rem !important;
+
+  &_head{
+    margin-bottom: 1rem !important;
+  }
+
+  &_h1card{
+    margin-bottom: 0.5rem !important;
+  }
+}
+
+.margin-top{
+  margin-top: 1rem !important;
+}
+
+
+.nav{
+  position: relative;
+  top: 0;
+  left:0;
+  width: 100%;
+  padding: 38px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+ 
+
+      
+
+
+    &__navigation{
+      position: relative;
+     display: flex;
+
+    
+     }
+
+     &__list{
+      list-style: none; 
+
+
+ 
+     }
+
+&__link{
+  display: flex;
+  color: $dark-color-opacity;
+  font-weight: 600;      
+  margin: 0 50px;
+  font-size: 1.2em;
+  text-decoration: none;
+  position: relative;
+  transition: 0.5s;
+    
+
+    &:hover{
+      background-position: right center;
+      color: $dark-color;
+    }
+
+
+      }
+}
+
+/* Button CSS*/
+.btn {
+    margin-top: 1rem;
+    padding: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 2px $blue-color;
+    border-radius: 10px;
+    text-decoration: none;
+
+    &:hover {
+      background-position: 100%; /* change the direction of the change here */
+  }
+    
+}
+  
+
+.btn-1 {
+    background-image: linear-gradient(to right, #19273c 0%, #19273c 50%, #3e5c76 50%, #3e5c76 100%);
+    overflow: hidden;
+}
+/* End Button CSS*/
+
+.stage {
+  
+
+  &_top{
+  position: flex;
+  content: "";
+  top: 15px;
+  left: 0;
+  width: 15rem;
+  height: 0.2rem;
+  background: $blue-color;
+}
+
+  &_top-header{
+    position: flex;
+    content: "";
+    top: 15px;
+    left: 0;
+    width: 2rem;
+    height: 0.2rem;
+    margin-right: 1rem;
+    background: $blue-color;
+  }
+
+  &_bot{
+  margin-top: 2rem;
+  position: flex;
+  content: "";
+  top: 15px;
+  left: 0;
+  width: 100%;
+  height: 0.2rem;
+  background: $blue-color;
+}
+}
+
+      
+
+p {
+  font-weight: 600;
+  color: $blue-color;
+  font-size: 1.2em;
+}
+    
+::selection {
+  color: $white-color;
+  background: $highlight-dark-blue-color;
+}   
+
+
+/* This card css */
+
+.card{  
+  margin: 0 2rem;
+  width: 330px;  
+  height: 225px;  
+  background: $white-color-card;  
+  position: relative;  
+  border-radius: 20px;  
+  border: 1px solid rgba(255, 255, 255, 0.164);  
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.100);  
+}  
+
+.card-top{
+  padding: 1rem;
+}
+
+.card img{  
+  position: absolute;  
+  width: 100%;  
+  border-radius: 10px;  
+}  
+
+
+.content{  
+  flex-direction: column;
+  display: flex;
+  position: absolute;  
+  width: 100%;  
+  bottom: 0;  
+  height: 0; 
+  padding: 0.4em 1.5em;  
+  font-size: 14px;  
+  background: rgba(255, 255, 255, 0);  
+  backdrop-filter: blur(10px);  
+  border-radius: 10px;  
+  transform: scale(0.9);  
+  color: white;  
+  border: 1px solid rgba(255, 255, 255, 0.164);  
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.144);  
+  overflow: hidden;  
+  transition: all .4s;  
+  visibility: hidden;
+}  
+.content p{  
+  font-size: 0.8em;  
+}  
+.card:hover .content{  
+  height: 150px;  
+  visibility: visible;
+}  
+
+/* End card  */
+
+/* Icon card  */
+
+.material-symbols-outlined{
+  font-size: 2.2em !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box-logo {
+  background: $dark-color-opacity !important;
+  margin-right: 12px;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center; 
+  position: relative;
+}
+  
+  /* End icon card  */
+.para{
+  color: $grey-color;
+  font-size: 1em;
+}
