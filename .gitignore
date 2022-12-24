@@ -4643,3 +4643,7 @@ node_modules/websocket-extensions/lib/websocket_extensions.js
 node_modules/websocket-extensions/LICENSE.md
 node_modules/websocket-extensions/package.json
 node_modules/websocket-extensions/README.md
+css/main.css
+css/main.css.map
+includes/header_img.png
+node_modules/node-sass/src/libsass/script/bootstrap
