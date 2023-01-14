@@ -124,6 +124,9 @@ body {
     .itembutton {
       position: inherit;
       justify-content: space-around; } }
+  @media (max-width: 30.5em) {
+    .itembutton {
+      margin-top: 3rem; } }
 
 .itemright {
   background-size: cover;

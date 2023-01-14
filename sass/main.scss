@@ -212,6 +212,10 @@ body {
       justify-content: space-around;
 
       }
+
+      @include respond(small-phone) {
+        margin-top: 3rem;
+      }
 }
 
 .itemright {
