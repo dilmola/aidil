@@ -14,6 +14,10 @@ $dark-grey-color: #34463e;
 
 
 @mixin respond($breakpoint) {
+  @if $breakpoint == small-phone {
+    @media (max-width: 30.5em) { @content }; //600px (600px / 16px(default px on browser) = 37.5em)
+  }
+
   @if $breakpoint == phone {
       @media (max-width: 37.5em) { @content }; //600px (600px / 16px(default px on browser) = 37.5em)
   }
@@ -145,7 +149,12 @@ body {
         }
       
         @include respond(phone) {
-          font-size: 3rem;
+          font-size: 2.7rem;
+
+        }
+
+        @include respond(small-phone) {
+          font-size: 2.5rem;
 
         }
     }
@@ -329,7 +338,7 @@ body {
 }
 
 .margin-top-head{
-  margin-top: 10rem;
+  margin-top: 8rem;
 }
 
 
@@ -390,9 +399,9 @@ body {
   position: relative;
   transition: 0.5s;
 
-  @include respond(phone) {
-  margin: 0 20px;
-  }
+    @include respond(phone) {
+      margin: 0 20px;
+    }
 
 
     &:hover{
@@ -401,7 +410,7 @@ body {
     }
 
 
-      }
+}
 }
 
 /* Button CSS*/
@@ -421,6 +430,10 @@ body {
     border-radius: 10px;
     text-decoration: none;      
     border: none;
+
+    @include respond(small-phone) {
+      margin-top: 0 !important;
+    }
     }
     
     
@@ -428,7 +441,7 @@ body {
     &:hover {
       background-position: 100% 200px; /* change the direction of the change here */
   }
-    
+  
 }
   
 
@@ -451,6 +464,10 @@ body {
 
 .btn-padding{
   padding: 12px 64px;
+  @include respond(small-phone) {
+    padding: 16px;
+
+  }
 }
 /* End Button CSS*/
 
@@ -496,6 +513,11 @@ p {
   font-weight: 600;
   color: $dark-color;
   font-size: 1.2em;
+
+  @include respond(small-phone) {
+    font-size: 1rem;
+
+  }
 }
     
 ::selection {
@@ -514,7 +536,10 @@ p {
   position: relative;  
   border-radius: 20px;  
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.100);  
-
+  @include respond(small-phone) {
+    width: 333px;  
+  height: 345px;  
+  }
   &--img1{
     background-image: url(../includes/hrform.png);
     background-repeat: no-repeat;
@@ -745,6 +770,10 @@ p {
   left: 5em;
   width: 90%;
   
+  @include respond(small-phone) {
+    width: 78%;
+  }
+
   h3 {
     font-size: 1.75em;
   }
