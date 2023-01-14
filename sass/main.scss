@@ -140,14 +140,22 @@ body {
       
         @include respond(tab-port) {
           font-size: 3rem;
+          
       
         }
       
         @include respond(phone) {
           font-size: 3rem;
+
         }
     }
+    @include respond(phone) {
+    
+      align-items: center;
+      flex-direction: column;
+      position: inherit;
 
+    }
     &__first-text{
        
         color: $dark-color;
@@ -166,9 +174,20 @@ body {
   top: auto;
   left: 5rem;
 
+  @include respond(tab-port) {
+    position: inherit;
 
 
+  }
+
+  @include respond(phone) {
+    position: inherit;
+
+
+  }
 }
+
+
 
 .itembutton {
     display: flex;
@@ -178,6 +197,12 @@ body {
     position: relative;
     top: 2rem;
     left: 5rem;
+
+    @include respond(phone) {
+      position: inherit;
+      justify-content: space-around;
+
+      }
 }
 
 .itemright {
@@ -231,9 +256,22 @@ body {
     justify-content: center;
 
     float: left;
-    width: 50%;
+    width: 60%;
     padding: 10px;
     height: auto; 
+
+    
+ 
+    
+      @include respond(tab-port) {
+        width: 100%;
+    
+      }
+    
+      @include respond(phone) {
+        width: 100%;
+        flex-direction: column;
+      }
   }
 
 
@@ -254,6 +292,22 @@ body {
     clear: both;
   
   }
+  @include respond(tab-land) {
+    display: flex;
+      
+    }
+  
+    @include respond(tab-port) {
+      display: flex;
+      flex-direction: column;
+
+    }
+  
+    @include respond(phone) {
+      display: flex;
+      flex-direction: column;
+
+    }
 }
 
 .margin-bot{
@@ -272,6 +326,10 @@ body {
 
 .margin-top{
   margin-top: 1rem !important;
+}
+
+.margin-top-head{
+  margin-top: 10rem;
 }
 
 
@@ -304,8 +362,21 @@ body {
 
      &__list{
       list-style: none; 
+      padding: 0 4rem;
 
-
+      @include respond(tab-land) {
+        padding: 0 2rem;
+          
+        }
+      
+        @include respond(tab-port) {
+          padding: 0;
+      
+        }
+      
+        @include respond(phone) {
+          padding: 0;
+        }
  
      }
 
@@ -318,7 +389,11 @@ body {
   text-decoration: none;
   position: relative;
   transition: 0.5s;
-    
+
+  @include respond(phone) {
+  margin: 0 20px;
+  }
+
 
     &:hover{
       background-position: right center;
@@ -444,6 +519,14 @@ p {
     background-image: url(../includes/hrform.png);
     background-repeat: no-repeat;
     background-size: cover; 
+    @include respond(phone) {
+      margin-bottom: 3rem;
+    }
+
+    @include respond(tab-port) {
+      margin-bottom: 3rem;
+  
+    }
   }
 
   &--img2{
@@ -456,6 +539,13 @@ p {
     background-image: url(../includes/gymhouse.png);
     background-repeat: no-repeat;
     background-size: cover; 
+    @include respond(phone) {
+      margin-bottom: 3rem;
+    }
+    @include respond(tab-port) {
+      margin-bottom: 3rem;
+  
+    }
   }
    
   
@@ -558,6 +648,18 @@ p {
       border-radius: 0.4rem;
       font-size: 1rem;
       font-weight: bold;
+
+      @include respond(tab-port) {
+        width: 100%;
+
+  
+      }
+    
+      @include respond(phone) {
+        width: 100%;
+
+  
+      }
 
       &:focus{
           outline: none;

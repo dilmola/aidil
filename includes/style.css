@@ -85,6 +85,11 @@ body {
     @media (max-width: 37.5em) {
       .itemleft__text {
         font-size: 3rem; } }
+  @media (max-width: 37.5em) {
+    .itemleft {
+      align-items: center;
+      flex-direction: column;
+      position: inherit; } }
   .itemleft__first-text {
     color: #1d2d44;
     font-weight: 300 !important; }
@@ -97,6 +102,12 @@ body {
   position: relative;
   top: auto;
   left: 5rem; }
+  @media (max-width: 56.25em) {
+    .itemleft-no-flex {
+      position: inherit; } }
+  @media (max-width: 37.5em) {
+    .itemleft-no-flex {
+      position: inherit; } }
 
 .itembutton {
   display: flex;
@@ -106,6 +117,10 @@ body {
   position: relative;
   top: 2rem;
   left: 5rem; }
+  @media (max-width: 37.5em) {
+    .itembutton {
+      position: inherit;
+      justify-content: space-around; } }
 
 .itemright {
   background-size: cover;
@@ -137,9 +152,16 @@ body {
 .column {
   justify-content: center;
   float: left;
-  width: 50%;
+  width: 60%;
   padding: 10px;
   height: auto; }
+  @media (max-width: 56.25em) {
+    .column {
+      width: 100%; } }
+  @media (max-width: 37.5em) {
+    .column {
+      width: 100%;
+      flex-direction: column; } }
 
 .row {
   position: relative;
@@ -156,6 +178,17 @@ body {
     content: "";
     display: table;
     clear: both; }
+  @media (max-width: 75em) {
+    .row {
+      display: flex; } }
+  @media (max-width: 56.25em) {
+    .row {
+      display: flex;
+      flex-direction: column; } }
+  @media (max-width: 37.5em) {
+    .row {
+      display: flex;
+      flex-direction: column; } }
 
 .margin-bot {
   margin-bottom: 3rem !important; }
@@ -166,6 +199,9 @@ body {
 
 .margin-top {
   margin-top: 1rem !important; }
+
+.margin-top-head {
+  margin-top: 10rem; }
 
 .nav {
   position: relative;
@@ -180,7 +216,17 @@ body {
     position: relative;
     display: flex; }
   .nav__list {
-    list-style: none; }
+    list-style: none;
+    padding: 0 4rem; }
+    @media (max-width: 75em) {
+      .nav__list {
+        padding: 0 2rem; } }
+    @media (max-width: 56.25em) {
+      .nav__list {
+        padding: 0; } }
+    @media (max-width: 37.5em) {
+      .nav__list {
+        padding: 0; } }
   .nav__link {
     display: flex;
     color: #818181d1;
@@ -190,6 +236,9 @@ body {
     text-decoration: none;
     position: relative;
     transition: 0.5s; }
+    @media (max-width: 37.5em) {
+      .nav__link {
+        margin: 0 20px; } }
     .nav__link:hover {
       background-position: right center;
       color: #1d2d44; }
@@ -277,6 +326,12 @@ p {
     background-image: url(../includes/hrform.png);
     background-repeat: no-repeat;
     background-size: cover; }
+    @media (max-width: 37.5em) {
+      .card--img1 {
+        margin-bottom: 3rem; } }
+    @media (max-width: 56.25em) {
+      .card--img1 {
+        margin-bottom: 3rem; } }
   .card--img2 {
     background-image: url(../includes/tadhkir.png);
     background-repeat: no-repeat;
@@ -285,6 +340,12 @@ p {
     background-image: url(../includes/gymhouse.png);
     background-repeat: no-repeat;
     background-size: cover; }
+    @media (max-width: 37.5em) {
+      .card--img3 {
+        margin-bottom: 3rem; } }
+    @media (max-width: 56.25em) {
+      .card--img3 {
+        margin-bottom: 3rem; } }
 
 .card-top {
   padding: 1rem 0.4rem; }
@@ -361,6 +422,12 @@ p {
   border-radius: 0.4rem;
   font-size: 1rem;
   font-weight: bold; }
+  @media (max-width: 56.25em) {
+    .form_input {
+      width: 100%; } }
+  @media (max-width: 37.5em) {
+    .form_input {
+      width: 100%; } }
   .form_input:focus {
     outline: none;
     border: 3.4px solid #354f52;
