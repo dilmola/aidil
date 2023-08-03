@@ -8,7 +8,7 @@ const textLoad = () => {
         text.textContent = 'Software Developer';
     }, 4000);
     setTimeout(() => {
-        text.textContent = 'UI/UX Designer';
+        text.textContent = 'Web Developer';
     }, 8000);
    
 }
